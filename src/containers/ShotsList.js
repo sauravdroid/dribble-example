@@ -29,8 +29,8 @@ export class ShotsList extends React.Component {
     }
 
     renderIcons = () => {
-        const {shots = []} = this.state;
-
+//         const {shots = []} = this.state;
+        const shots = this.state.shots || [];
         return shots.map((item, index) => {
             const {title, images, id} = item;
 
